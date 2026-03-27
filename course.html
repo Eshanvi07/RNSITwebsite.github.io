@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Courses</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>📚 Courses</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="placements.html">Placements</a>
+    <a href="clubs.html">Clubs</a>
+    <a href="alumni.html">Alumni</a>
+  </nav>
+</header>
+
+<section class="glass">
+  <select id="courseFilter" onchange="filterCourses()">
+    <option value="all">All</option>
+    <option value="cse">CSE</option>
+    <option value="ece">ECE</option>
+    <option value="eee">EEE</option>
+    <option value="mech">MECH</option>
+    <option value="civil">CIVIL</option>
+    <option value="ds">CS-DS</option>
+    <option value="cy">CS-CY</option>
+  </select>
+
+  <div id="courseList" class="cards">
+    <div class="card" data-course="cse">💻 CSE</div>
+    <div class="card" data-course="ece">📡 ECE</div>
+    <div class="card" data-course="eee">⚡ EEE</div>
+    <div class="card" data-course="mech">⚙️ MECH</div>
+    <div class="card" data-course="civil">🏗️ CIVIL</div>
+    <div class="card" data-course="ds">📊 CS-DS</div>
+    <div class="card" data-course="cy">🔐 CS-CY</div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
